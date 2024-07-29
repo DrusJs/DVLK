@@ -162,6 +162,7 @@ function initLoaderBar() {
 
     if (!elem || !preloader) return;
 
+    preloader.classList.remove('hide');
     requestAnimationFrame(function measure() {
         elem.style.width = width + "%";
         width += ANIMATION_STEP
