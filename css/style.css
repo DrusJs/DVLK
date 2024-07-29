@@ -809,6 +809,9 @@ ul {
 .mainscreen__dropdown-wrapper {
     position: relative;
 }
+.mainscreen__dropdown-wrapper.calc__dropdown-wrapper {
+    max-width: none;
+}
 
 .mainscreen__dropdown {
     cursor: pointer;
@@ -825,7 +828,7 @@ ul {
     display: none;
 }
 
-.mainscreen__dropdown-wrapper.active .dropdown-content {
+.active > .dropdown-content {
     display: block;
 }
 
@@ -2671,6 +2674,27 @@ input:checked + .notification__checkbox::before {
     .footer-adress__item:first-child {
         padding-right: 38px;
     }
+    .footer-adresses__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 40px 0;
+    }
+    .footer-adress__item:first-child,
+    .footer-adress__item:nth-child(2) {
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .footer-adress__item:first-child::after,
+    .footer-adress__item:nth-child(2)::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid var(--color-grey);
+    }
     .news__card {
         width: 340px;
         min-width: 340px;
@@ -2683,13 +2707,8 @@ input:checked + .notification__checkbox::before {
         flex-direction: column;
         gap: 28px;
     }
-    .footer-adresses__row {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    }
     .footer-adress__item:nth-child(2) {
-        border: none;
+        border-right: none;
     }
     .personal__advantages-item {
         flex-direction: column;
@@ -3003,6 +3022,9 @@ input:checked + .notification__checkbox::before {
         flex-direction: row;
         gap: 30px;
     }
+    .services-mainscreen__contacts {
+        max-width: none;
+    }
     .tariff__button-large p:first-child {
         white-space: normal;
     }
@@ -3022,6 +3044,17 @@ input:checked + .notification__checkbox::before {
     }
     .footer__developer svg:last-child {
         width: 74px;
+    }
+    .footer-adresses__row {
+        padding-bottom: 0;
+    }
+    .footer-adress__item:first-child,
+    .footer-adress__item:nth-child(2) {
+        margin-bottom: 0px;
+    }
+    .footer-adress__item:first-child::after,
+    .footer-adress__item:nth-child(2)::after {
+        display: none;
     }
     .download-buttons__wrapper .tariff__button-large p:first-child svg {
         display: none;
