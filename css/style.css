@@ -3228,6 +3228,10 @@ input:checked + .notification__checkbox::before {
     }
     .contacts-item__links-wrapper {
         flex-direction: column;
+        gap: 10px;
+    }
+    .contacts-item__links-wrapper a {
+        font-size: 16px;
     }
 }
 
