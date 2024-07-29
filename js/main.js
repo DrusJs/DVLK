@@ -1,5 +1,6 @@
 const PRELOADER_MAX_WIDTH = 99.9;
-const INITIAL_LOADER_WIDTH = 99;
+const INITIAL_LOADER_WIDTH = 0;
+const ANIMATION_STEP = 0.5;
 
 const navigationDropdown = document.querySelector('.dropdown-nav');
 
@@ -34,6 +35,8 @@ document.querySelector('.schedule__tab') && document.querySelectorAll('.schedule
     })
 })
 
+// инициализация прелоадера
+// initLoaderBar();
 
 if (document.querySelector('.pop-up-wrapper')) { 
     if (document.getElementById('main-timeout')) {
@@ -41,9 +44,6 @@ if (document.querySelector('.pop-up-wrapper')) {
         setTimeout(()=>{ 
             document.querySelector('.pop-up-wrapper').classList.add('active'); 
         }, 6000) 
-
-        // вывод лоадера на главной странице
-        initLoaderBar();
     }
 
     document.querySelectorAll('.close-button').forEach(el=>{
@@ -158,20 +158,20 @@ if (document.querySelector('.contacts__item')) {
 function initLoaderBar() {
     const elem = document.querySelector('.progress-bar span');
     const preloader = document.querySelector('.preloader');
-
     let width = INITIAL_LOADER_WIDTH;
-    let id = setInterval(frame, 20);
 
-    function frame() {
-        if (!elem || !preloader) return;
+    if (!elem || !preloader) return;
 
-        if (width >= PRELOADER_MAX_WIDTH) {
-            clearInterval(id);
-            preloader.classList.add('hide');
-            document.body.classList.remove('scroll--disabled');
+    requestAnimationFrame(function measure() {
+        elem.style.width = width + "%";
+        width += ANIMATION_STEP
+    
+        if (width < 100) {
+            requestAnimationFrame(measure);
         } else {
-            width++;
-            elem.style.width = width + "%";
+            preloader.classList.add('hide');
+            document.body.classList.remove('scroll--disabled');        
         }
-    }
+    })
 }
+
