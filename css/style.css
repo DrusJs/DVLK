@@ -2905,7 +2905,9 @@ input:checked + .notification__checkbox::before {
     }
 }
 @media (max-width: 840px) {
-
+    .mainscreen-contacts__text .mainscreen-contacts__link-wrapper  {
+        flex-direction: column;
+    }
     .tariff__header-column {
         width: 100%;
         align-items: flex-start;
@@ -3206,9 +3208,6 @@ input:checked + .notification__checkbox::before {
     }
     .contacts__item {
         padding: 20px;
-    }
-    .mainscreen-contacts__text .mainscreen-contacts__link-wrapper  {
-        flex-direction: column;
     }
 }
 
