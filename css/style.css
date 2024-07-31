@@ -2910,6 +2910,9 @@ input:checked + .notification__checkbox::before {
         width: 100%;
         align-items: flex-start;
     }
+    .services-mainscreen__text p {
+        line-height: 18px;
+    }
     .main-title {
         font-size: 32px;
         line-height: 38px;
