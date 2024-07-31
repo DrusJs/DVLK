@@ -3205,6 +3205,9 @@ input:checked + .notification__checkbox::before {
     .footer-adresses__row {
         padding-bottom: 0;
     }
+    .tarif__item-container .text-primary {
+        font-size: 12px;
+    }
     .footer-adress__item:first-child,
     .footer-adress__item:nth-child(2) {
         margin-bottom: 0px;
