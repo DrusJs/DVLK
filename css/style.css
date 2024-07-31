@@ -2381,10 +2381,6 @@ input:checked + .notification__checkbox::before {
         max-width: 376px;
     }
 
-    .services__block {
-        max-width: 850px;
-    }
-
     .services__tab-item {
         padding: 32px 28px 32px 20px;
         text-align: left;
