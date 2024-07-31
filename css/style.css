@@ -2337,6 +2337,10 @@ input:checked + .notification__checkbox::before {
     .button-green.text-primary {
         font-size: 18px;
     }
+    .maincreen__form-button {
+        padding: 14px;
+        max-width: 280px;
+    }
     .button-green svg {
         width: 16px;
         height: 16px;
