@@ -1249,6 +1249,7 @@ ul {
 
 .services-mainscreen__contacts {
     max-width: 460px;
+    gap: 16px;
     width: 100%;
     background-color: var(--color-white);
     border-radius: 12px;
