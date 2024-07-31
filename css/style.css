@@ -2305,7 +2305,9 @@ input:checked + .notification__checkbox::before {
 .contacts-item__header-wrapper svg {
     min-width: 40px;
 }
-
+.services-mainscreen__wrapper {
+    gap: 30px;
+}
 @media (max-width: 1480px) {
     
     .container,
@@ -2963,7 +2965,6 @@ input:checked + .notification__checkbox::before {
     }
     .services-mainscreen__wrapper {
         flex-direction: column;
-        gap: 30px;
     }
     .services__documents {
         padding: 22px 16px;
