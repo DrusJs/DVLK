@@ -1386,6 +1386,10 @@ ul {
     width: 100%;
 }
 
+.services__documents .container {
+    gap: 40px;
+}
+
 /* services personal */
 
 .services__personal-wrapper {
