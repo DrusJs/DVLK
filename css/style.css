@@ -953,6 +953,9 @@ ul {
 .services__tab-item--active path {
     fill: var(--color-darkblue);
 }
+.services__tab-item--active rect {
+    stroke: var(--color-darkblue);
+}
 
 .services__block {
     max-width: 932px;
@@ -2361,6 +2364,7 @@ input:checked + .notification__checkbox::before {
     }
     .advantages__card-item p {
         font-size: 12px;
+        line-height: 16px;
     }
 
     .advantages__card-item svg {
