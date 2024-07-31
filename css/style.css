@@ -3008,6 +3008,9 @@ input:checked + .notification__checkbox::before {
     .text-primary {
         font-size: 14px;
     }
+    .schedule__content .text-primary {
+        font-size: 20px;
+    }
     .button-green.text-primary {
         font-size: 16px;
     }
