@@ -2531,9 +2531,13 @@ input:checked + .notification__checkbox::before {
         border-bottom: 1px solid var(--color-grey);
         font-size: 16px;
     }
+    .home-page__mainscreen h1 {
+        font-size: 32px;
+    }
     .contacts__status-li--active {
         border-bottom: 1px solid var(--color-blue);
     }
+
     .schedule__tabs-wrapper {
         display: none;
         position: absolute;
@@ -2953,6 +2957,16 @@ input:checked + .notification__checkbox::before {
     }
     .text-primary {
         font-size: 14px;
+    }
+    .button-green.text-primary {
+        font-size: 16px;
+    }
+    .button-green svg {
+        width: 14px;
+        height: 14px;
+    }
+    .maincreen__form-button {
+        padding: 16px;
     }
     .services-mainscreen__text a {
         max-width: none;

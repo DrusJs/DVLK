@@ -42,7 +42,7 @@ if (document.querySelector('.pop-up-wrapper')) {
     if (document.getElementById('main-timeout')) {
         // появление модалки-уведомления
         setTimeout(()=>{ 
-            document.querySelector('.pop-up-wrapper').classList.add('active'); 
+            // document.querySelector('.pop-up-wrapper').classList.add('active'); 
         }, 6000) 
     }
 
