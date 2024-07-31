@@ -739,6 +739,7 @@ ul {
     text-underline-offset: 4px;
     text-decoration-color: inherit;
     color: var(--color-darkblue);
+    font-size: 18px;
 }
 
 .breadcrumbs__link--active {
@@ -2332,6 +2333,13 @@ input:checked + .notification__checkbox::before {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .button-green.text-primary {
+        font-size: 18px;
+    }
+    .button-green svg {
+        width: 16px;
+        height: 16px;
+    }
     .schedule__tab {
         font-size: 18px;
     }
@@ -2342,7 +2350,9 @@ input:checked + .notification__checkbox::before {
     .logo {
         font-size: 30px;
     }
-
+    .text-primary--small {
+        font-size: 16px;
+    }
     .logo img {
         max-width: 33px;
     }
@@ -2481,7 +2491,9 @@ input:checked + .notification__checkbox::before {
     .footer-adress__item:first-child {
         padding-right: 68px;
     }
-    
+    .main-title {
+        font-size: 36px;
+    }
     .banner__section {
         padding-left: 30px;
         padding-right: 30px;        
@@ -2931,11 +2943,12 @@ input:checked + .notification__checkbox::before {
         padding-top: 24px;
         padding-bottom: 24px;
     }
-}
-@media (max-width: 840px) {
     .mainscreen-contacts__text .mainscreen-contacts__link-wrapper  {
         flex-direction: column;
     }
+}
+@media (max-width: 840px) {
+
     .tariff__header-column {
         width: 100%;
         align-items: flex-start;
