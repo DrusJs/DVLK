@@ -1069,6 +1069,9 @@ ul {
 }
 .tariff__button-large p:first-child span {
     width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /* schedule section */
 
