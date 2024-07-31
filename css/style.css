@@ -2932,7 +2932,7 @@ input:checked + .notification__checkbox::before {
         gap: 4px;
     }
     .tariff__title-wrapper h2 {
-        font-size: 26px;
+        font-size: 32px;
     }
     .tariff__title-wrapper svg {
         height: 30px;
@@ -2973,6 +2973,10 @@ input:checked + .notification__checkbox::before {
     .services-mainscreen__wrapper {
         flex-direction: column;
         gap: 30px;
+    }
+    
+    .tariff__title-wrapper h2 {
+        font-size: 26px;
     }
     .services__documents {
         padding: 22px 16px;
