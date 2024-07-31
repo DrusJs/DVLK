@@ -2846,7 +2846,13 @@ input:checked + .notification__checkbox::before {
         width: 20px;
         min-width: 20px;
     }
-    .advantages__text-block h2,
+    .advantages__text-block h2 {
+        font-size: 24px;
+    }
+    .advantages__text-block > p {
+        font-size: 14px;
+        line-height: 18px;
+    }
     .services__block-text h2,
     h3.subtitle {
         font-size: 20px;
@@ -2912,6 +2918,9 @@ input:checked + .notification__checkbox::before {
     .services__personal-wrapper {
         padding-top: 24px;
         padding-bottom: 24px;
+    }
+    .advantages__text-block > p {
+        font-size: 14px;
     }
 }
 @media (max-width: 840px) {
