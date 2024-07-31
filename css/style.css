@@ -2658,10 +2658,6 @@ input:checked + .notification__checkbox::before {
         right: -10%;
         height: 480px;
     }
-    .services__documents .container {
-        flex-direction: column;
-        gap: 20px;
-    }
     .advantages__topside {
         flex-direction: column;
         gap: 32px;
@@ -2899,6 +2895,9 @@ input:checked + .notification__checkbox::before {
     .services-mainscreen__text {
         gap: 16px;
     }
+    .services__documents .container {
+        padding: 0;
+    }
 }
 @media (max-width: 840px) {
     .mainscreen-contacts__text .mainscreen-contacts__link-wrapper  {
@@ -2962,6 +2961,13 @@ input:checked + .notification__checkbox::before {
     .button-large {
         padding: 22px 16px;
     }
+    .subtitle svg {
+        width: 28px;
+        height: 28px;
+    }
+    h3.subtitle {
+        gap: 12px !important;
+    }
 }
 @media (max-width: 640px) {
     .container,
@@ -2969,6 +2975,11 @@ input:checked + .notification__checkbox::before {
     .services__personal {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    
+    .services__documents .container {
+        flex-direction: column;
+        gap: 20px;
     }
     .services-mainscreen__wrapper {
         flex-direction: column;
@@ -3185,10 +3196,7 @@ input:checked + .notification__checkbox::before {
         max-width: none;
     }
     
-    .subtitle svg {
-        width: 28px;
-        height: 28px;
-    }
+
     .news__cards-wrapper {
         overflow: visible;
         flex-direction: column;
