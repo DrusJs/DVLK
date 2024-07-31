@@ -2959,6 +2959,9 @@ input:checked + .notification__checkbox::before {
     .footer-adress__item {
         padding: 0 10%;  
     }
+    .button-large {
+        padding: 22px 16px;
+    }
 }
 @media (max-width: 640px) {
     .container,
