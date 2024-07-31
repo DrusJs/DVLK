@@ -3015,7 +3015,10 @@ input:checked + .notification__checkbox::before {
         padding-left: 16px;
         padding-right: 16px;
     }
-    
+    .news__card p {
+        font-size: 12px;
+        line-height: 16px;
+    }
     .tariff__header-column .button-green {
         display: none;
     }
