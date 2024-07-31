@@ -2316,7 +2316,9 @@ input:checked + .notification__checkbox::before {
     gap: 60px;
 }
 @media (max-width: 1480px) {
-    
+    .container {
+        max-width: 110;
+    }
     .container,
     .services__select,
     .services__documents,
@@ -2498,6 +2500,10 @@ input:checked + .notification__checkbox::before {
         width: 100%;
         max-width: 100%;
     }
+    .subtitle svg {
+        width: 46px;
+        height: 46px;
+    }
 }
 
 @media (max-width: 1090px) {  
@@ -2512,6 +2518,7 @@ input:checked + .notification__checkbox::before {
         background-color: var(--color-white);
         max-width: none;
     }
+    
     .contacts__status-list {
         display: none;
         position: absolute;
@@ -2900,10 +2907,6 @@ input:checked + .notification__checkbox::before {
     .schedule__tab {
         max-width: none;
     }
-    .tariff__wrapper {
-        flex-direction: column;
-        gap: 20px;
-    }
     .footer-adress__item {
         max-width: none;
         width: 100%;
@@ -3016,6 +3019,11 @@ input:checked + .notification__checkbox::before {
     .services__personal {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    
+    .tariff__wrapper {
+        flex-direction: column;
+        gap: 20px;
     }
     .news__section h2 {
         font-size: 26px;
