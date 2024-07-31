@@ -2306,7 +2306,7 @@ input:checked + .notification__checkbox::before {
     min-width: 40px;
 }
 .services-mainscreen__wrapper {
-    gap: 30px;
+    gap: 60px;
 }
 @media (max-width: 1480px) {
     
@@ -2912,7 +2912,8 @@ input:checked + .notification__checkbox::before {
         font-size: 32px;
         line-height: 38px;
     }
-    .text-primary--small {
+    .text-primary--small,
+    .text-secondary--small {
         font-size: 14px;
     }
     .tariff__header-column .button-green {
@@ -2965,6 +2966,7 @@ input:checked + .notification__checkbox::before {
     }
     .services-mainscreen__wrapper {
         flex-direction: column;
+        gap: 30px;
     }
     .services__documents {
         padding: 22px 16px;
