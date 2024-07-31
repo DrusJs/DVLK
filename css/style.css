@@ -1515,7 +1515,7 @@ input:checked + .notification__checkbox::before {
 }
 
 .notification-relevant {
-    padding: 4px 12px;
+    padding: 8px 12px;
     background-color: var(--color-green);
     color: var(--color-white);
     border-radius: 4px;
@@ -2334,6 +2334,9 @@ input:checked + .notification__checkbox::before {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .subtitle--small {
+        font-size: 28px;
+    }
     .button-green.text-primary {
         font-size: 18px;
     }
@@ -2673,10 +2676,7 @@ input:checked + .notification__checkbox::before {
     .burger-menu {
         display: block;
     }
-    .container.banner__wrapper-right {
-        padding: 400px 20px 30px 20px;
-        justify-content: flex-start;
-    }
+
     .banner__wrapper-right .banner__img {
         top: 0 !important;
         right: 0 !important;
@@ -2828,7 +2828,10 @@ input:checked + .notification__checkbox::before {
         padding-bottom: 400px;
         padding-top: 30px;
     }
-    
+    .container.banner__wrapper-right {
+        padding: 400px 20px 30px 20px;
+        justify-content: flex-start;
+    }
     .banner__img {
         top: auto !important;
         right: auto !important;
