@@ -3157,6 +3157,9 @@ input:checked + .notification__checkbox::before {
     .services__personal-wrapper {
         padding: 20px 16px;
     }
+    .services__personal-wrapper .text-primary {
+        font-size: 12px;
+    }
     .notification-main__header-wrapper h1 svg {
         display: none;
     }
