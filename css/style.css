@@ -1072,7 +1072,7 @@ ul {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: calc(100vw - 190px);
+    max-width: calc(100vw - 610px);
 }
 /* schedule section */
 
@@ -2949,14 +2949,6 @@ input:checked + .notification__checkbox::before {
     .text-secondary--small {
         font-size: 14px;
     }
-    .tariff__header-column .button-green {
-        display: none;
-    }
-    .download-buttons__wrapper .tariff__button {
-        display: block;
-        width: 100%;
-        max-width: none;
-    }
     .tariff__title-wrapper {
         flex-wrap: wrap;
         gap: 4px;
@@ -3009,6 +3001,9 @@ input:checked + .notification__checkbox::before {
     h3.subtitle {
         gap: 12px !important;
     }
+    .tariff__button-large p:first-child span {
+        max-width: calc(100vw - 500px);
+    }
 }
 @media (max-width: 640px) {
     .container,
@@ -3018,6 +3013,17 @@ input:checked + .notification__checkbox::before {
         padding-right: 16px;
     }
     
+    .tariff__header-column .button-green {
+        display: none;
+    }
+    .tariff__button-large p:first-child span {
+        max-width: calc(100vw - 190px);
+    }
+    .download-buttons__wrapper .tariff__button {
+        display: block;
+        width: 100%;
+        max-width: none;
+    }
     .tariff__wrapper {
         flex-direction: column;
         gap: 20px;
