@@ -2518,6 +2518,9 @@ input:checked + .notification__checkbox::before {
         width: 46px;
         height: 46px;
     }
+    .title--small {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 1090px) {  
