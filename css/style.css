@@ -1249,7 +1249,7 @@ ul {
 
 .services-mainscreen__contacts {
     max-width: 460px;
-    gap: 16px;
+    gap: 20px;
     width: 100%;
     background-color: var(--color-white);
     border-radius: 12px;
@@ -2821,7 +2821,6 @@ input:checked + .notification__checkbox::before {
 
     .services-mainscreen__contacts {
         flex-direction: column-reverse;
-        gap: 20px;
     }
     .tarif__content-wrapper {
         padding: 30px;
