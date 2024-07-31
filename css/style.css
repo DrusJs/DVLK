@@ -2822,7 +2822,7 @@ input:checked + .notification__checkbox::before {
         margin-top: 30px;
     }
     .mt-120 {
-        margin-top: 60px;
+        margin-top: 80px;
     }  
     .banner__wrapper {
         padding-bottom: 400px;
@@ -2969,7 +2969,9 @@ input:checked + .notification__checkbox::before {
     }
 }
 @media (max-width: 840px) {
-
+    .mt-120 {
+        margin-top: 60px;
+    }  
     .tariff__header-column {
         width: 100%;
         align-items: flex-start;
@@ -3362,6 +3364,9 @@ input:checked + .notification__checkbox::before {
     .contacts-item__links-wrapper a {
         font-size: 16px;
     }
+    .mt-120 {
+        margin-top: 40px;
+    }  
 }
 
 @media (hover: hover) {
