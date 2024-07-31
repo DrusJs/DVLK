@@ -2778,6 +2778,7 @@ input:checked + .notification__checkbox::before {
         padding-bottom: 400px;
         padding-top: 30px;
     }
+    
     .banner__img {
         top: auto !important;
         right: auto !important;
@@ -2899,7 +2900,9 @@ input:checked + .notification__checkbox::before {
     .download-buttons__wrapper {
         max-width: none;
     }
-
+    .services-mainscreen__text {
+        gap: 16px;
+    }
 }
 @media (max-width: 840px) {
 
