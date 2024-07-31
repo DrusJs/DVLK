@@ -2777,7 +2777,6 @@ input:checked + .notification__checkbox::before {
     .banner__wrapper {
         padding-bottom: 400px;
         padding-top: 30px;
-        max-width: calc(100% - 60px);
     }
     .banner__img {
         top: auto !important;
