@@ -2899,6 +2899,9 @@ input:checked + .notification__checkbox::before {
     .services-mainscreen__text {
         gap: 16px;
     }
+    .services-mainscreen__text .button-green {
+        margin-top: 10px;
+    }
     .services__documents .container {
         padding: 0;
     }
