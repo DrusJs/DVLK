@@ -2623,6 +2623,7 @@ input:checked + .notification__checkbox::before {
     }
     .notification-main__header-wrapper h1 svg {
         width: 30px;
+        height: auto;
     }
     .notification-main__wrapper.notice {
         padding: 24px 20px;
@@ -3053,6 +3054,9 @@ input:checked + .notification__checkbox::before {
     .news__card h3 {
         font-size: 16px;
     }
+    .contacts-card__text-wrapper p:last-child {
+        font-size: 16px;
+    }
 }
 @media (max-width: 640px) {
     .container,
@@ -3060,6 +3064,18 @@ input:checked + .notification__checkbox::before {
     .services__personal {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .contacts-card__text-wrapper p:first-child {
+        font-size: 10px;
+    }
+    .contacts__main-content .contacts-item__header-wrapper svg {
+        display: none;
+    }
+    .mobile-select-wrapper {
+        padding: 12px 20px;
+    }
+    .mobile-select-wrapper {
+        font-size: 14px;
     }
     .news__card p {
         font-size: 12px;
