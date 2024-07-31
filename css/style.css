@@ -2902,6 +2902,10 @@ input:checked + .notification__checkbox::before {
     .services__documents .container {
         padding: 0;
     }
+    .services__personal-wrapper {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 @media (max-width: 840px) {
     .mainscreen-contacts__text .mainscreen-contacts__link-wrapper  {
