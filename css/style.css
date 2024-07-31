@@ -2929,9 +2929,6 @@ input:checked + .notification__checkbox::before {
         padding-top: 24px;
         padding-bottom: 24px;
     }
-    .advantages__text-block > p {
-        font-size: 14px;
-    }
 }
 @media (max-width: 840px) {
     .mainscreen-contacts__text .mainscreen-contacts__link-wrapper  {
@@ -3024,6 +3021,11 @@ input:checked + .notification__checkbox::before {
     .tariff__wrapper {
         flex-direction: column;
         gap: 20px;
+    }
+    .advantages__text-block > p {
+        font-size: 16px;
+        max-width: 440px;
+        font-weight: 450;
     }
     .news__section h2 {
         font-size: 26px;
@@ -3276,6 +3278,9 @@ input:checked + .notification__checkbox::before {
         flex-direction: column;
         align-items: flex-start;
     }  
+    .news__card h3 {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 420px) {
