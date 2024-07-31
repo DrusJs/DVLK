@@ -2338,7 +2338,7 @@ input:checked + .notification__checkbox::before {
         font-size: 18px;
     }
     .maincreen__form-button {
-        padding: 14px;
+        padding: 18px;
         max-width: 280px;
     }
     .mainscreen__form .maincreen__form-button {
@@ -3008,9 +3008,6 @@ input:checked + .notification__checkbox::before {
     .button-green svg {
         width: 14px;
         height: 14px;
-    }
-    .maincreen__form-button {
-        padding: 16px;
     }
     .services-mainscreen__text a {
         max-width: none;
