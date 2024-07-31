@@ -2745,6 +2745,12 @@ input:checked + .notification__checkbox::before {
     .news__cards-wrapper {
         overflow-x: scroll;
     }
+    .mainscreen__link {
+        text-decoration-thickness: 1px;
+    }
+    .mainscreen__link svg {
+        width: 16px;
+    }
     .navigation-item__wrapper {
         flex-direction: column;
         gap: 28px;
