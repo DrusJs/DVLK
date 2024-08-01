@@ -540,6 +540,7 @@ ul {
 .header__link {
     gap: 8px;
     white-space: nowrap;
+    align-items: center;
 }
 .burger-menu {
     display: none;

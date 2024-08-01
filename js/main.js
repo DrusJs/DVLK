@@ -111,6 +111,13 @@ if (selectItem) {
             e.currentTarget.closest('.calc__dropdown-wrapper').querySelector('.value').innerHTML = value;
         })
     })
+
+    window.addEventListener('click', (e)=>{
+        if (e.target.contains(selectItem)) {
+            let active = document.querySelector('.calc__dropdown-wrapper.active')
+            active && active.classList.remove('active')
+        }
+    })
 }
 
 if (document.getElementById('calendar')) {
