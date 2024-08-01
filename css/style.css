@@ -2327,9 +2327,6 @@ input:checked + .notification__checkbox::before {
     display: none;
 }
 @media (max-width: 1480px) {
-    .container {
-        max-width: 110;
-    }
     .container,
     .services__select,
     .services__documents,
@@ -2799,12 +2796,6 @@ input:checked + .notification__checkbox::before {
     .calc__form {
         margin-top: 30px;
     }
-    .about-main__wrapper {
-        padding-bottom: 420px;
-        padding: 20px 20px 420px 20px;
-        background-position: bottom 20px left 40px;
-        background-size: auto 380px;
-    }
     .services__documents-button {
         margin-top: 30px;
     }
@@ -2828,25 +2819,8 @@ input:checked + .notification__checkbox::before {
     .mt-120 {
         margin-top: 80px;
     }  
-    .banner__wrapper {
-        padding-bottom: 400px;
-        padding-top: 30px;
-    }
-    .container.banner__wrapper-right {
-        padding: 400px 20px 30px 20px;
-        justify-content: flex-start;
-    }
-    .banner__img {
-        top: auto !important;
-        right: auto !important;
-        bottom: -40px;
-        left: -40px;
-        max-height: 400px;
-    }
-    .banner__wrapper-right .banner__img {
-        top: 0 !important;
-        right: 0 !important;
-    }
+
+
     .services-mainscreen__contacts {
         flex-direction: column-reverse;
     }
@@ -2980,6 +2954,16 @@ input:checked + .notification__checkbox::before {
     .services__block-text p, .services__block-text a {
         font-size: 14px;
     }
+    .banner__wrapper {
+        padding-right: 500px;
+    }
+    .container.banner__wrapper-right {
+        padding-right: 30px;
+    }
+    .about-main__wrapper {
+        background-size: 450px;
+        padding-right: 450px;
+    }
 }
 @media (max-width: 840px) {
     .mt-120 {
@@ -2988,6 +2972,36 @@ input:checked + .notification__checkbox::before {
     .tariff__header-column {
         width: 100%;
         align-items: flex-start;
+    }
+    
+    .about-main__wrapper {
+        padding-bottom: 420px;
+        padding: 20px 20px 420px 20px;
+        background-position: bottom 20px left 40px;
+        background-size: auto 380px;
+    }
+    .banner__wrapper {
+        padding-bottom: 400px;
+        padding-top: 30px;
+    }
+    
+    .banner__wrapper {
+        padding-right: 30px;
+    }
+    .container.banner__wrapper-right {
+        padding: 400px 20px 30px 20px;
+        justify-content: flex-start;
+    }
+    .banner__img {
+        top: auto !important;
+        right: auto !important;
+        bottom: -40px;
+        left: -40px;
+        max-height: 400px;
+    }
+    .banner__wrapper-right .banner__img {
+        top: 0 !important;
+        right: 0 !important;
     }
     .services-mainscreen__text p {
         line-height: 18px;
