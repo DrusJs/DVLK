@@ -959,7 +959,7 @@ ul {
 }
 
 .services__block {
-    max-width: 932px;
+    max-width: 952px;
     width: 100%;
     background-color: var(--color-darkblue);
     border-top-left-radius: 12px;
@@ -2678,10 +2678,7 @@ input:checked + .notification__checkbox::before {
         display: block;
     }
 
-    .banner__wrapper-right .banner__img {
-        top: 0 !important;
-        right: 0 !important;
-    }
+
     .header__top-bar {
         background-color: var(--color-white);
         padding: 10px 0;
@@ -2840,7 +2837,10 @@ input:checked + .notification__checkbox::before {
         left: -40px;
         max-height: 400px;
     }
-
+    .banner__wrapper-right .banner__img {
+        top: 0 !important;
+        right: 0 !important;
+    }
     .services-mainscreen__contacts {
         flex-direction: column-reverse;
     }
@@ -2971,6 +2971,9 @@ input:checked + .notification__checkbox::before {
     .mainscreen-contacts__text .mainscreen-contacts__link-wrapper  {
         flex-direction: column;
     }
+    .services__block-text p, .services__block-text a {
+        font-size: 14px;
+    }
 }
 @media (max-width: 840px) {
     .mt-120 {
@@ -3059,6 +3062,13 @@ input:checked + .notification__checkbox::before {
     }
     .contacts-card__text-wrapper p:last-child {
         font-size: 16px;
+    }
+    .advantages__text-block {
+        max-width: 410px;
+    }
+    .services__block .services__button {
+        width: 100%;
+        max-width: none;
     }
 }
 @media (max-width: 640px) {
@@ -3159,6 +3169,7 @@ input:checked + .notification__checkbox::before {
     }
     .services__personal-wrapper .text-primary {
         font-size: 12px;
+        font-weight: 450;
     }
     .notification-main__header-wrapper h1 svg {
         display: none;
