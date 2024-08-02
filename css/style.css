@@ -1250,6 +1250,7 @@ ul {
 
 .services-mainscreen__contacts {
     max-width: 460px;
+    min-width: 300px;
     gap: 20px;
     width: 100%;
     background-color: var(--color-white);
