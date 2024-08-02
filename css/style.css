@@ -2547,6 +2547,12 @@ input:checked + .notification__checkbox::before {
     .mobile-select-wrapper {
         display: flex;
     }
+    .services-mainscreen__text {
+        gap: 16px;
+    }
+    .services-mainscreen__text .button-green {
+        margin-top: 16px;
+    }
     .contacts__status {
         padding: 0;
         background-color: var(--color-white);
