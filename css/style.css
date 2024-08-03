@@ -2337,6 +2337,10 @@ input:checked + .notification__checkbox::before {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .container.footer__top-bar_wrapper {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .subtitle--small {
         font-size: 28px;
     }
