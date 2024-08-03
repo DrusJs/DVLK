@@ -3054,7 +3054,7 @@ input:checked + .notification__checkbox::before {
         top: auto !important;
         right: auto !important;
         bottom: -40px;
-        left: -40px;
+        left: 10px;
         max-height: 400px;
     }
     .banner__wrapper-right .banner__img {
