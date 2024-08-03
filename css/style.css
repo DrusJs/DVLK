@@ -2586,12 +2586,6 @@ input:checked + .notification__checkbox::before {
     .mobile-select-wrapper {
         display: flex;
     }
-    .services-mainscreen__text {
-        gap: 16px;
-    }
-    .services-mainscreen__text .button-green {
-        margin-top: 16px;
-    }
     .contacts__status {
         padding: 0;
         background-color: var(--color-white);
@@ -2988,11 +2982,12 @@ input:checked + .notification__checkbox::before {
     .download-buttons__wrapper {
         max-width: none;
     }
+    
     .services-mainscreen__text {
-        gap: 16px;
+        gap: 6px;
     }
     .services-mainscreen__text .button-green {
-        margin-top: 10px;
+        margin-top: 26px;
     }
     .services__documents .container {
         padding: 0;
