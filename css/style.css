@@ -1236,6 +1236,7 @@ ul {
 .calc__button {
     max-width: 317px;
     width: 100%;
+    margin-left: 40px;
 }
 
 .services-mainscreen__text {
@@ -2423,6 +2424,18 @@ input:checked + .notification__checkbox::before {
         gap: 24px;
     }
 
+    .services__block {
+        padding: 40px 0 40px 40px;
+        min-height: 450px;
+    }
+
+    .services__block .services__button {
+        width: fit-content;
+        min-width: auto;
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
     .services__block::after, .services__block-two::after, .services__block-three::after {
         left: 520px;
         max-width: 30vw;
@@ -2520,10 +2533,6 @@ input:checked + .notification__checkbox::before {
     .about-advantages__item {
         padding: 40px;
     }
-    .calc__form,
-    .calc-form__inputs-wrapper {
-        flex-wrap: wrap;
-    }
     .calc__button {
         max-width: none;
     }
@@ -2558,9 +2567,13 @@ input:checked + .notification__checkbox::before {
     }
 }
 
-@media (max-width: 1090px) {  
+@media (max-width: 1130px) {  
     body.scroll--disabled {
         overflow: hidden;
+    }
+    .banner__img {
+        max-width: 480px;
+        top: -100px;
     }
     .mobile-select-wrapper {
         display: flex;
@@ -2576,7 +2589,14 @@ input:checked + .notification__checkbox::before {
         background-color: var(--color-white);
         max-width: none;
     }
-    
+    .calc__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .calc__button {
+        max-width: none;
+        margin-left: 0;
+    }
     .contacts__status-list {
         display: none;
         position: absolute;
@@ -3131,6 +3151,26 @@ input:checked + .notification__checkbox::before {
     .calc-form__button {
         padding: 16px 22px;
     }
+    .mainscreen__input {
+        padding: 16px;
+    }
+    .services__block {
+        min-height: 520px;
+    }
+    
+    .home-page__mainscreen {
+        padding-top: 20px;
+    }
+    .mainscreen__form {
+        gap: 12px;
+    }
+    
+    .mainscreen__form .button-green {
+        margin-top: 8px;
+    }
+    .advantages__cards {
+        gap: 16px;
+    }
 }
 @media (max-width: 640px) {
     .container,
@@ -3138,6 +3178,23 @@ input:checked + .notification__checkbox::before {
     .services__personal {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .mainscreen__form {
+        gap: 8px;
+    }
+    .mainscreen__form .button-green {
+        margin-top: 12px;
+    }
+    .home-page__mainscreen {
+        padding-top: 10px;
+    }
+    .mainscreen__input {
+        padding: 12px 16px;
+        font-size: 12px;
+    }
+    .button-green.text-primary {
+        font-size: 14px;
+        font-weight: 500;
     }
     .contacts-card__text-wrapper--height {
         min-height: auto;
@@ -3160,6 +3217,9 @@ input:checked + .notification__checkbox::before {
     .contacts__main-content .contacts-item__header-wrapper svg {
         display: none;
     }
+    .home-page__mainscreen h1 {
+        font-size: 26px;
+    }
     .mobile-select-wrapper {
         padding: 12px 20px;
     }
@@ -3169,6 +3229,10 @@ input:checked + .notification__checkbox::before {
     .news__card p {
         font-size: 12px;
         line-height: 16px;
+    }
+    
+    .calc__form {
+        grid-template-columns: 1fr;
     }
     .tariff__header-column .button-green {
         display: none;
@@ -3338,8 +3402,9 @@ input:checked + .notification__checkbox::before {
         height: 300px;
     }
     .home-page__mainscreen {
-        padding-bottom: 320px;
-        background-position: bottom right -782px;
+        padding-bottom: 60px;
+        background-position: bottom right -565px;
+        min-height: 700px;
     }
     .banner__section {
         padding-left: 16px;
@@ -3450,6 +3515,12 @@ input:checked + .notification__checkbox::before {
     .news__card h3 {
         font-size: 14px;
     }
+    .advantages__text-block h2 {
+        font-size: 20px;
+    }
+    .advantages__text-block > p {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -3458,7 +3529,7 @@ input:checked + .notification__checkbox::before {
         height: 250px;
     }
     .home-page__mainscreen {
-        background-position: bottom right -950px;
+        background-position: bottom right -570px;
     }
     .button-switch {
         display: none;
