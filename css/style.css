@@ -3182,6 +3182,9 @@ input:checked + .notification__checkbox::before {
         padding-left: 16px;
         padding-right: 16px;
     }
+    .calc__wrapper {
+        padding: 12px;
+    }
     .mainscreen__form {
         gap: 8px;
     }
