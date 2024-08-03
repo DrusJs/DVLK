@@ -2349,6 +2349,10 @@ input:checked + .notification__checkbox::before {
         padding: 18px;
         max-width: 280px;
     }
+    .about-main__wrapper {
+        padding-top: 40px;
+        padding-left: 40px;
+    }
     .mainscreen__form .maincreen__form-button {
         max-width: none;
     }
@@ -2538,6 +2542,19 @@ input:checked + .notification__checkbox::before {
     }
     .button-large {
         padding: 20px;
+    }
+    
+    .button-green {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .services-mainscreen__text .button-green {
+        width: fit-content;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .notification__main {
+        padding: 0 30px;
     }
 }
 
@@ -2972,16 +2989,26 @@ input:checked + .notification__checkbox::before {
         background-size: 450px;
         padding-right: 450px;
     }
-}
-@media (max-width: 840px) {
-    .mt-120 {
+    .schedule__main h1 {
+        display: none;
+    }
+    p.mt-16 {
+        margin-top: 8px;
+    }
+    .schedule__tables-container.mt-120 {
         margin-top: 60px;
-    }  
+    }
+}
+@media (max-width: 840px) {  
     .tariff__header-column {
         width: 100%;
         align-items: flex-start;
     }
-    
+    .services-mainscreen__text .button-green {
+        width: fit-content;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
     .about-main__wrapper {
         padding-bottom: 420px;
         padding: 20px 20px 420px 20px;
@@ -3098,6 +3125,12 @@ input:checked + .notification__checkbox::before {
         width: 100%;
         max-width: none;
     }
+    .calculation__form-wrapper.mt-40 {
+        margin-top: 20px;
+    }
+    .calc-form__button {
+        padding: 16px 22px;
+    }
 }
 @media (max-width: 640px) {
     .container,
@@ -3106,7 +3139,15 @@ input:checked + .notification__checkbox::before {
         padding-left: 16px;
         padding-right: 16px;
     }
-
+    .contacts-card__text-wrapper--height {
+        min-height: auto;
+    }
+    .notification__main {
+        padding: 0 16px;
+    }
+    .contacts__status-list {
+        top: 42px;
+    }
     .services__documents-text .button-green {
         display: none;
     }
@@ -3195,6 +3236,10 @@ input:checked + .notification__checkbox::before {
     }
     .services__documents-button {
         max-width: none;
+    }
+    
+    .services-mainscreen__text .button-green {
+        width: 100%;
     }
     .about-advantages__wrapper {
         grid-template-columns: 1fr;
