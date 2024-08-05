@@ -1042,6 +1042,7 @@ ul {
 }
 .tariff__header-column {
     width: 100%;
+    min-width: 320px;
 }
 .tariff__header-column h3 {
     gap: 24px;
@@ -1074,7 +1075,7 @@ ul {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: calc(100vw - 610px);
+    max-width: calc(100vw - 660px);
 }
 /* schedule section */
 
@@ -2329,6 +2330,9 @@ input:checked + .notification__checkbox::before {
 .button-green.mobile {
     display: none;
 }
+.document-section__header-link.mob {
+    display: none;
+}
 @media (max-width: 1480px) {
     .container,
     .services__select,
@@ -2471,7 +2475,9 @@ input:checked + .notification__checkbox::before {
     .tariff__wrapper, .documents__section-content, .schedule__wrapper {
         padding: 40px;
     }
-
+    .tariff__wrapper {
+        gap: 20px;
+    }
     .tariff__header-column p {
         max-width: 380px;
     }
@@ -3024,8 +3030,7 @@ input:checked + .notification__checkbox::before {
 }
 @media (max-width: 840px) {  
     .tariff__header-column {
-        width: 100%;
-        align-items: flex-start;
+        min-width: auto;
     }
     .services-mainscreen__text .button-green {
         width: fit-content;
@@ -3125,7 +3130,7 @@ input:checked + .notification__checkbox::before {
         gap: 12px !important;
     }
     .tariff__button-large p:first-child span {
-        max-width: calc(100vw - 500px);
+        max-width: calc(100vw - 596px);
         font-size: 12px;
         font-weight: 450;
     }
@@ -3181,6 +3186,13 @@ input:checked + .notification__checkbox::before {
     .services__personal {
         padding-left: 16px;
         padding-right: 16px;
+    }
+    .document-section__header-link.desc {
+        display: none;
+    }
+    .document-section__header-link.mob {
+        display: block;
+        margin-top: 20px;
     }
     .calc__wrapper {
         padding: 12px;
