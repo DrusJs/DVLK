@@ -2342,16 +2342,15 @@ input:checked + .notification__checkbox::before {
     flex-direction: column;
 }
 @media (max-width: 1480px) {
-    .container,
-    .services__select,
-    .services__documents,
-    .services__personal {
+    .container {
         padding-left: 30px;
         padding-right: 30px;
+        max-width: 1200px;
     }
     .container.footer__top-bar_wrapper {
         padding-left: 0px;
         padding-right: 0px;
+        max-width: 1140px;
     }
     .subtitle--small {
         font-size: 28px;
@@ -2543,6 +2542,7 @@ input:checked + .notification__checkbox::before {
     }
     .main-title {
         font-size: 36px;
+        line-height: 42px;
     }
     .banner__section {
         padding-left: 30px;
@@ -2592,6 +2592,9 @@ input:checked + .notification__checkbox::before {
 @media (max-width: 1130px) {  
     body.scroll--disabled {
         overflow: hidden;
+    }
+    .tariff__button-large p:first-child span {
+        max-width: 100px;
     }
     .banner__img {
         max-width: 400px;
@@ -2761,13 +2764,13 @@ input:checked + .notification__checkbox::before {
     }
     .home-page__mainscreen {
         padding-bottom: 500px;  
-        background-position: bottom right -700px;
+        background-position: bottom right -620px;
         background-image: url(../img/mainscreen-bg-mob.svg);
     }
     .mainscreen__img {
         left: auto;
         right: -10%;
-        height: 480px;
+        height: 498px;
     }
     .advantages__topside {
         flex-direction: column;
@@ -2791,6 +2794,11 @@ input:checked + .notification__checkbox::before {
         margin-bottom: 40px;
         position: relative;
     }
+    .header {
+        max-width: 760px;
+        box-shadow: 0 -100vw 0 100vw #FFFFFF;
+        margin:  0 auto;
+    }
     .footer-adress__item:first-child::after,
     .footer-adress__item:nth-child(2)::after {
         content: '';
@@ -2802,16 +2810,13 @@ input:checked + .notification__checkbox::before {
         border-bottom: 1px solid var(--color-grey);
     }
     .news__card {
-        width: 340px;
-        min-width: 340px;
+        width: 320px;
+        min-width: 320px;
         margin-bottom: 50px;
         padding: 20px;
     }
     .news__cards-wrapper {
         overflow-x: scroll;
-        width: 100vw;
-        margin-left: -30px;
-        padding: 0 30px;
     }
     .mainscreen__link {
         text-decoration-thickness: 1px;
@@ -2899,6 +2904,7 @@ input:checked + .notification__checkbox::before {
     .services__block::after, .services__block-two::after, .services__block-three::after {
         left: auto;
         right: 0;
+        top: -60px;
         background-color: transparent;
         max-height: 100px;
         width: 100%;
@@ -3041,6 +3047,17 @@ input:checked + .notification__checkbox::before {
     .about-advantages__item {
         gap: 12px;
     }
+    .container {
+        max-width: 760px;
+    }
+    .container.footer__top-bar_wrapper {
+        max-width: 700px;
+    }
+    .services__personal-wrapper,
+    .services__documents .container,
+    .banner__wrapper {
+        max-width: 700px;
+    }
 }
 @media (max-width: 840px) {  
     .tariff__header-column {
@@ -3056,6 +3073,12 @@ input:checked + .notification__checkbox::before {
     }
     .services-mainscreen__text p {
         line-height: 18px;
+    }
+    
+    .tarif__item-container .tariff-button__text-wrapper p,
+    .tarif__item-container .tariff-button__text-wrapper p span,
+    .tariff-button__date {
+        font-size: 12px;
     }
     .main-title {
         font-size: 32px;
@@ -3115,7 +3138,7 @@ input:checked + .notification__checkbox::before {
         gap: 12px !important;
     }
     .tariff__button-large p:first-child span {
-        max-width: calc(100vw - 596px);
+        max-width: calc(100vw - 560px);
         font-size: 12px;
         font-weight: 450;
     }
@@ -3567,7 +3590,8 @@ input:checked + .notification__checkbox::before {
         flex-direction: column-reverse;
     }
     .tarif__item-container .tariff-button__text-wrapper p,
-    .tarif__item-container .tariff-button__text-wrapper p:first-child span {
+    .tarif__item-container .tariff-button__text-wrapper p:first-child span,
+    .tariff-button__date {
         font-size: 10px;
     }
     .tariff-button__date {
