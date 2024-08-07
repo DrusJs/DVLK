@@ -1320,6 +1320,10 @@ ul {
     gap: 28px;
 }
 
+.tariff-button__text-wrapper .date {
+    display: none;
+}
+
 .tariff-button__date {
     color: var(--color-black);
     border-radius: 8px;
@@ -2600,6 +2604,10 @@ input:checked + .notification__checkbox::before {
         max-width: 400px;
         top: -100px;
     }
+    .container.banner__wrapper-right .banner__img {
+        max-width: 320px;
+        top: 0;
+    }
     .mobile-select-wrapper {
         display: flex;
     }
@@ -3030,10 +3038,12 @@ input:checked + .notification__checkbox::before {
     }
     .container.banner__wrapper-right {
         padding-right: 30px;
+        padding-left: 350px;
     }
     .about-main__wrapper {
         background-size: 450px;
-        padding-right: 450px;
+        padding-right: 360px;
+        background-position: top 0px right -80px;
     }
     .schedule__main h1 {
         display: none;
@@ -3055,7 +3065,9 @@ input:checked + .notification__checkbox::before {
     }
     .services__personal-wrapper,
     .services__documents .container,
-    .banner__wrapper {
+    .banner__wrapper,
+    .notification-main__wrapper,
+    .news-main__wrapper {
         max-width: 700px;
     }
 }
@@ -3256,6 +3268,11 @@ input:checked + .notification__checkbox::before {
     .button-green.text-primary {
         font-size: 14px;
         font-weight: 500;
+    }
+    
+
+    .tariff-button__text-wrapper .date {
+        display: flex;
     }
     .contacts-card__text-wrapper--height {
         min-height: auto;
