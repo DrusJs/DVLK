@@ -673,6 +673,10 @@ ul {
     white-space: nowrap;
 }
 
+.navigation__item.active {
+    color: var(--color-darkblue);
+}
+
 .dropdown-nav.active .navigation-item__hover {
     display: block;
 }
