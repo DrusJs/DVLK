@@ -262,11 +262,19 @@
                         <svg width="1" height="20" viewBox="0 0 1 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="1" height="20" fill="#A0B9D1"/>
                         </svg>
-                        <button class="notification__filter-button text-primary  text-primary--small  flex gap12"> Сначала новые 
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13.7567 7.57397H9.80133H6.23959C5.63009 7.57397 5.32535 8.31045 5.75707 8.74217L9.04581 12.0309C9.57277 12.5579 10.4299 12.5579 10.9568 12.0309L12.2076 10.7802L14.2456 8.74217C14.6709 8.31045 14.3662 7.57397 13.7567 7.57397Z" fill="#1C5BA5"/>
-                            </svg>
-                        </button>                         
+                        <div class="select-wrapper">
+                            <button class="notification__filter-button text-primary  text-primary--small  flex gap12"> <span class="val">Сначала новые</span>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.7567 7.57397H9.80133H6.23959C5.63009 7.57397 5.32535 8.31045 5.75707 8.74217L9.04581 12.0309C9.57277 12.5579 10.4299 12.5579 10.9568 12.0309L12.2076 10.7802L14.2456 8.74217C14.6709 8.31045 14.3662 7.57397 13.7567 7.57397Z" fill="#1C5BA5"/>
+                                </svg>
+                            </button>  
+                            <div class="dropdown-content dropdown-content--calc">
+                                <ul class="dropdown-content__list">
+                                    <li class="dropdown-content__li text-primary text-primary--small letter-spacing3">Сначала новые</li>
+                                    <li class="dropdown-content__li text-primary text-primary--small letter-spacing3">Сначала старые</li>
+                                </ul>
+                            </div>
+                        </div>                       
                     </div>
                 </div>
                 <div class="notification__content flex-column">
