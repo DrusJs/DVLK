@@ -1170,6 +1170,12 @@ ul {
 .document-section__buttons-wrapper {
     margin-top: 50px;
 }
+.document-section__buttons-wrapper .button-large .font-size14.font-semibold {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 430px;
+}
 .tariff__button {
     margin-top: 76px;
     max-width: 260px;
@@ -2346,14 +2352,27 @@ input:checked + .notification__checkbox::before {
     display: none;
 }
 .column-mobule-wrap {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
 }
 @media (max-width: 1480px) {
     .container {
         padding-left: 30px;
         padding-right: 30px;
         max-width: 1200px;
+    }
+    .column-mobule-wrap {
+        max-width: 1140px;
+    }
+    .column-mobule-wrap .container {
+        padding: 0;
+    }
+    .document-section__buttons-wrapper .button-large .font-size14.font-semibold {
+        max-width: 320px;
     }
     .container.footer__top-bar_wrapper {
         padding-left: 0px;
@@ -2600,6 +2619,18 @@ input:checked + .notification__checkbox::before {
 @media (max-width: 1130px) {  
     body.scroll--disabled {
         overflow: hidden;
+    }
+    .column-mobule-wrap {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .document-section__buttons-wrapper .button-large .font-size14.font-semibold {
+        max-width: none;
+        white-space: normal;
+        overflow: visible;
+    }
+    .column-mobule-wrap .container {
+        padding: 0 30px;
     }
     .tariff__button-large p:first-child span {
         max-width: 100px;
@@ -3238,6 +3269,10 @@ input:checked + .notification__checkbox::before {
         flex-direction: column;
         align-items: flex-start;
     }  
+    .column-mobule-wrap {
+        flex-direction: column;
+        gap: 40px;
+    }
 }
 @media (max-width: 640px) {
     .container,
@@ -3606,9 +3641,6 @@ input:checked + .notification__checkbox::before {
         padding-top: 20px;
         padding-left: 20px;
         padding-right: 20px;
-    }
-    .column-mobule-wrap {
-        flex-direction: column-reverse;
     }
     .tarif__item-container .tariff-button__text-wrapper p,
     .tarif__item-container .tariff-button__text-wrapper p:first-child span,
