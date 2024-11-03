@@ -140,6 +140,46 @@ if (document.getElementById('calendar')) {
     calendar.init();
 }
 
+const noteRelevant = document.querySelector('.notification__checkbox-wrapper input')
+const toggleFilter = document.querySelector('.select-wrapper')
+
+if (noteRelevant) {
+
+    noteRelevant.addEventListener('change', (e)=>{
+        setVisibilitiList(e.target.checked)
+    })
+
+    toggleFilter.addEventListener('click', (e)=>{
+        e.currentTarget.classList.toggle('active')
+    })
+
+    toggleFilter.querySelectorAll('.dropdown-content__li').forEach(el=>{
+        el.addEventListener('click', (e)=>{
+            let value = e.currentTarget.innerHTML
+            e.currentTarget.closest('.select-wrapper').querySelector('.notification__filter-button .val').innerHTML =  value
+        })
+    })
+
+    setVisibilitiList(noteRelevant.checked)
+
+    fetch(window.location.href)
+        .then(response => response.text())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => {
+            console.error('Ошибка:', error);
+        });
+}
+
+function setVisibilitiList(isChecked) {
+    if (isChecked) {
+        document.querySelector('.notification__content').classList.add('rel-filter')
+    } else {        
+        document.querySelector('.notification__content').classList.remove('rel-filter')
+    }
+}
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
